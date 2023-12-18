@@ -3,7 +3,7 @@ import { CssBaseline } from '@mui/material';
 import { Route, Switch } from 'react-router-dom';
 
 import useStyles from './styles';
-import { Actors, MovieInformation, Movies, Navbar, Profile } from '.';
+import { Actors, MovieInformation, Movies, NavBar, Profile } from '.';
 
 const App = () => {
   const classes = useStyles();
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Navbar />
+      <NavBar />
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
