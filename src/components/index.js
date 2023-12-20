@@ -3,5 +3,6 @@ import NavBar from './NavBar/NavBar';
 import MovieInformation from './MovieInformation/MovieInformation';
 import Profile from './Profile/Profile';
 import Movies from './Movies/Movies';
+import Sidebar from './Sidebar/Sidebar';
 
-export {Actors,NavBar,MovieInformation,Profile,Movies};
+export {Actors,NavBar,MovieInformation,Profile,Movies,Sidebar};
