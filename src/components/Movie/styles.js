@@ -27,7 +27,7 @@ export default makeStyles((theme) => ({
   title: {
     color: theme.palette.text.primary,
     textOverflow: 'ellipsis', //cuts down the text if it overflows over a certain area and adds ...
-    width: '230px',
+    width: '180px',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     marginTop: '10px',
