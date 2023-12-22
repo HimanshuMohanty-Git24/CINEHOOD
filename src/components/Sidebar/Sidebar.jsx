@@ -30,11 +30,11 @@ const redLogo =
   "https://fontmeme.com/permalink/210930/6854ae5c7f76597cf8680e48a2c8a50a.png";
 
 const Sidebar = ({ setMobileOpen }) => {
+  const { genreIdOrCategoryName } =useSelector((state) => state.currentGenreOrCategory)
   const classes = useStyles();
   const theme = useTheme();
   const {data,isFetching} = useGetGenresQuery();
   const dispatch =useDispatch();
-  console.log(data);
   return (
     <div>
       <>
