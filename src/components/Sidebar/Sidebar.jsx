@@ -36,7 +36,7 @@ function Sidebar({ setMobileOpen }) {
         <img
           className={classes.image}
           src={theme.palette.mode === 'light' ? lightLogo : darkLogo}
-          alt="Filmpire Site Logo"
+          alt="CINEHOOD Site Logo"
         />
       </Link>
       <Divider />

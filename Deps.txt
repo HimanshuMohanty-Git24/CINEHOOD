@@ -1,2 +1,2 @@
+//*Run this command to install all the dependency
  npm i react-router-dom @alan-ai/alan-sdk-web @mui/icons-material @mui/material @mui/styles @reduxjs/toolkit axios react-redux
- //run this command to install all deps
