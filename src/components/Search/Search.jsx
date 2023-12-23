@@ -1,30 +1,39 @@
-import React, { useState, useEffect } from "react";
-import { TextField, InputAdornment } from "@mui/material";
-import { Search as SearchIcon } from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
-import useStyles from "./styles";
-import { searchMovie } from "../../features/currentGenreOrCategory";
-const Search = () => {
-    const dispatch =useDispatch();
+import React, { useState } from 'react';
+import { TextField, InputAdornment } from '@mui/material';
+import { Search as SearchIcon } from '@mui/icons-material';
+import { useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+
+import useStyles from './styles';
+import { searchMovie } from '../../features/currentGenreOrCategory';
+
+function Search() {
   const classes = useStyles();
-  const [query, setQuery] = useState("");
-  const handleKeyPress = (event) => {
-    if(event.key==='Enter'){
-        dispatch(searchMovie(query));
+  const [query, setQuery] = useState('');
+
+  const dispatch = useDispatch();
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      dispatch(searchMovie(query));
     }
   };
+
+  const location = useLocation();
+  if (location.pathname !== '/' && location.pathname !== '/approved') {
+    return null;
+  }
   return (
     <div className={classes.searchContainer}>
       <TextField
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyDown}
+        placeholder="Search for a Movie..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        variant='standard'
+        variant="standard"
         InputProps={{
           className: classes.input,
           startAdornment: (
-            <InputAdornment position='start'>
+            <InputAdornment position="start">
               <SearchIcon />
             </InputAdornment>
           ),
@@ -32,6 +41,6 @@ const Search = () => {
       />
     </div>
   );
-};
+}
 
 export default Search;

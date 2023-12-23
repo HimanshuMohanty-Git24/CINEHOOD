@@ -1,21 +1,12 @@
-import Actors from "./Actors/Actors";
-import NavBar from "./NavBar/NavBar";
-import MovieInformation from "./MovieInformation/MovieInformation";
-import Profile from "./Profile/Profile";
-import Movies from "./Movies/Movies";
-import Sidebar from "./Sidebar/Sidebar";
-import MovieList from "./MovieList/MovieList";
-import Movie from "./Movie/Movie";
-import Search from "./Search/Search";
-
-export {
-  Actors,
-  NavBar,
-  MovieInformation,
-  Profile,
-  Movies,
-  Sidebar,
-  MovieList,
-  Movie,
-  Search,
-};
+export { default as Actors } from './Actors/Actors';
+export { default as MovieInformation } from './MovieInformation/MovieInformation';
+export { default as Movies } from './Movies/Movies';
+export { default as Navbar } from './Navbar/Navbar';
+export { default as Profile } from './Profile/Profile';
+export { default as Sidebar } from './Sidebar/Sidebar';
+export { default as MovieList } from './MovieList/MovieList';
+export { default as Movie } from './Movie/Movie';
+export { default as Search } from './Search/Search';
+export { default as Pagination } from './Pagination/Pagination';
+export { default as RatedCards } from './RatedCards/RatedCards';
+export { default as FeaturedMovie } from './FeaturedMovie/FeaturedMovie';

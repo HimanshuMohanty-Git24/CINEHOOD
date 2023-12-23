@@ -36,4 +36,6 @@ export const createSessionId = async () => {
       console.log('Your session id could not be created.');
     }
   }
+
+  return null;
 };
