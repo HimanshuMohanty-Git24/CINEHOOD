@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT [othneildrew] SHIELDS -->
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/jovan-vukic/filmpire">
+    <img src="src/assets/images/lightLogo.png" alt="Filmpire" width="252" height="85">
+  </a>
 
-In the project directory, you can run:
+  <h2 align="center">Filmpire - Jovan Vukić</h2>
 
-### `npm start`
+  <p align="center">
+    Filmpire - AI Powered Movie App [React.js, Material UI, Alan AI]
+    <br />
+    <a href="https://github.com/jovan-vukic/filmpire"><strong>Explore the project »</strong></a>
+    <br />
+    <br />
+    <a href="https://filmpire-jovan.netlify.app/">View Demo Site</a>
+    ·
+    <a href="https://github.com/jovan-vukic/filmpire/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jovan-vukic/filmpire/issues">Request Feature</a>
+  </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm test`
+[![Product Name Screen Shot][product-screenshot]](https://filmpire-jovan.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Filmpire combines the desire to unleash powerful creativity with the industry's most advanced JavaScript tools including React.js, Redux, Material UI, Alan AI, and more.
 
-### `npm run build`
+Features include:
+* user authentication,
+* light and dark mode,
+* API calls with axios and Redux,
+* actors and movie details page,
+* watchlist and list of favorite movies,
+* movie search functionality,
+* Alan AI voice functionality and many more.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Alan works as an in-app voice assistant for the Filmpire project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- GETTING STARTED -->
+## Getting Started
 
-### `npm run eject`
+To get a local copy up and running follow these simple steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+List of things you need to use and how to install them:
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Setup:
 
-## Learn More
+1. Get a free TMDB API Key at [https://www.themoviedb.org/](https://www.themoviedb.org/).
+2. Clone the repo:
+   ```sh
+   git clone https://github.com/jovan-vukic/filmpire.git
+   ```
+3. Install NPM packages:
+   ```sh
+   npm install
+   ```
+4. Create your `.env` file as it is instructed in `.env.example`.
+5. Enter your TMDB API key in your `.env`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```sh
+   REACT_APP_TMDB_KEY=<put your key here>
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Code Splitting
+<!-- USAGE EXAMPLES -->
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For a full demonstration of all the functionalities of this phenomenal web application check out this [demo site](https://filmpire-jovan.netlify.app/).
 
-### Analyzing the Bundle Size
+_For more detailes regarding TMDB API calls, please refer to the [Documentation](https://developers.themoviedb.org/3/getting-started/introduction)._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+See the [open issues](https://github.com/jovan-vukic/filmpire/issues) for a full list of proposed features (and known issues).
 
-### Making a Progressive Web App
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Advanced Configuration
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Deployment
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
+<!-- LICENSE -->
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Jovan - [@jovan-vukic](https://github.com/jovan-vukic)
+
+Project Link: [https://github.com/jovan-vukic/filmpire](https://github.com/jovan-vukic/filmpire)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Used resources:
+
+* [The Movie DB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
+* [Alan AI Documentation](https://alan.app/docs/)
+* [MUI Library](https://mui.com/)
+* [JavaScript Mastery](https://www.jsmastery.pro/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot]: src/assets/images/screenshot.PNG
