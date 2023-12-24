@@ -50,7 +50,7 @@ To run CINEHOOD locally, follow these steps:
 
 ## Live Site 🌐
 
-Explore the live CINEHOOD site [here](#).
+Explore the live CINEHOOD site [here](https://cinehood.netlify.app/).
 
 ## Contributions 🤝
 
