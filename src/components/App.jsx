@@ -1,17 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { CssBaseline } from '@mui/material';
 import { Routes as Switch, Route } from 'react-router-dom';
 
 import { Actors, MovieInformation, Movies, Navbar, Profile, AISearch } from '.';
-
-import useAlan from './Alan/Alan';
 import useStyles from './styles';
 
 function App() {
   const classes = useStyles(); //useStyles.js hook
-
-  const alanBtnContainer = useRef();
-  useAlan();
 
   return (
     <div className={classes.root}>
@@ -28,7 +23,6 @@ function App() {
           <Route exact path="/ai-search" element={<AISearch />} />
         </Switch>
       </main>
-      <div ref={alanBtnContainer} />
     </div>
   );
 }

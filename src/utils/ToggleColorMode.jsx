@@ -4,25 +4,31 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 export const ColorModeContext = createContext();
 
 function ToggleColorMode({ children }) {
-  const [mode, setMode] = useState('light');
+  const [mode, setMode] = useState('dark');
 
   const theme = useMemo(() => createTheme({
     palette: {
       mode,
     },
-  }), [mode]); //theme will only change when mode changes
+  }), [mode]);
 
   const toggleColorMode = () => {
     setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
   };
 
-  return useMemo(() => (
-    <ColorModeContext.Provider value={useMemo(() => ({ mode, setMode, toggleColorMode }), [mode, setMode, toggleColorMode])}>
+  const colorContextValue = useMemo(() => ({
+    mode,
+    setMode,
+    toggleColorMode,
+  }), [mode]);
+
+  return (
+    <ColorModeContext.Provider value={colorContextValue}>
       <ThemeProvider theme={theme}>
         {children}
       </ThemeProvider>
     </ColorModeContext.Provider>
-  ), [mode, setMode, toggleColorMode, theme, children]);
+  );
 }
 
 export default ToggleColorMode;
