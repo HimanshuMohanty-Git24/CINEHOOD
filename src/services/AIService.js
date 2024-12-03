@@ -45,7 +45,7 @@ export const processAIQuery = async (query) => {
           }`,
         },
       ],
-      model: 'mixtral-8x7b-32768',
+      model: 'llama-3.1-8b-instant',
       temperature: 0.7,
       response_format: { type: 'json_object' },
     });
