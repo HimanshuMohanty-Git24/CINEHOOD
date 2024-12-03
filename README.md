@@ -1,6 +1,8 @@
 # CINEHOOD - Your Ultimate Movie Information Hub 🎬
 
-![MainPage](https://github.com/HimanshuMohanty-Git24/CINEHOOD/assets/94133298/0a677023-b5cf-4766-82aa-23bd5812e77c)
+![image](https://github.com/user-attachments/assets/2e2fdfa1-b6e3-4271-bb2c-4de6eeefa9b8)
+![image](https://github.com/user-attachments/assets/64e67a3f-87d0-4f3e-8954-6c2ac1224d56)
+
 
 Welcome to CINEHOOD, your one-stop solution for all things related to movies. This repository contains the source code for the CINEHOOD website, a feature-rich application built using React.js, Redux, Alan AI, TMDB API, Material-UI, and advanced AI capabilities. Whether you're a movie enthusiast or just looking for information about your favorite films, CINEHOOD has got you covered.
 
