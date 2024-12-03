@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { CssBaseline } from '@mui/material';
 import { Routes as Switch, Route } from 'react-router-dom';
 
-import { Actors, MovieInformation, Movies, Navbar, Profile } from '.';
+import { Actors, MovieInformation, Movies, Navbar, Profile, AISearch } from '.';
 
 import useAlan from './Alan/Alan';
 import useStyles from './styles';
@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/*" element={<Movies />} /> { /*notice: it's smart to use 'exact'*/ }
           <Route exact path="/approved" element={<Movies />} />
           <Route exact path="/profile/:id" element={<Profile />} />
+          <Route exact path="/ai-search" element={<AISearch />} />
         </Switch>
       </main>
       <div ref={alanBtnContainer} />
